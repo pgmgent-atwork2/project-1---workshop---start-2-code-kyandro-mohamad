@@ -1,6 +1,97 @@
-:root {}
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 13%, rgba(134,53,200,1) 49%, rgba(255,0,0,1) 100%);
+    padding: 1.5rem;
+}
+
+.content {
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 72rem) {
+    .content {
+        max-width: 77rem;
+        margin: 0 auto;
+        background-color: rgba(2, 0, 36, 0.5);
+        padding: 1.5rem;
+        margin-top: .5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+
+@media (min-width: 80rem) {
+    .content {
+        padding-left: 0;
+    } 
+}
 
 ul {
     list-style: none;
     padding: 0;
+}
+
+@media (min-width: 48rem) {
+    .intro {
+        margin-top: 8rem;
+    }   
+}
+
+h1 {
+    font-size: 3.3rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }   
+}
+
+p {
+    color: white;
+}
+
+.intro-first-text {
+    font-size: 1.7rem;
+}
+
+.intro-last-text {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 48rem) {
+    .intro-last-text {
+        margin-top: 3rem;
+    }  
+}
+
+.memory-game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+@media (min-width: 80rem) {
+    .memory-game {
+        width: 50rem;
+        // margin: 0 auto;
+    }
+}
+
+.card {
+    width: 45%;
+    aspect-ratio: 1/1;
+    background-color: lightgrey;
+    flex-grow: 1;
+}
+
+@media (min-width: 48rem) {
+    .card {
+        width: 22%;
+        margin: .5rem;
+    } 
 }
