@@ -44,6 +44,23 @@ a:hover {
     background: hsl(314, 64%, 34%);
 }
 
+.start {
+    background: transparent;
+    border: 1px solid white;
+    padding: .4rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.2s ease;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.start:hover {
+    background: hsl(314, 64%, 34%);
+}
+
 .content--game {
     padding-bottom: 3rem;
 }
@@ -78,6 +95,8 @@ h1 {
     line-height: 4rem;
     margin-bottom: 1rem;
     color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 4px hsl(314, 64%, 34%);
+    padding: 1.5rem 4.5rem 1.5rem 0;
 }
 
 @media (min-width: 48rem) {
@@ -133,13 +152,6 @@ p {
     cursor: pointer;
 }
 
-.card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-}
-
 @media (min-width: 48rem) {
     .card {
         width: 22%;
@@ -147,43 +159,42 @@ p {
     } 
 }
 
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
 .content--tutorial {
     background-color: hsla(243, 100%, 7%, 0.5);
     color: hsl(0, 0%, 100%);
-<<<<<<< HEAD
-    padding: 1.5rem 1.5rem 1.5rem 0;
+    padding: 1.5rem;
 }
 
-
-/*
-
-
-mohamad
-
-*/
-
-
-.start {
-    background: transparent;
-    border: 1px solid white;
-    padding: .4rem 1rem;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    transition: background 0.2s ease;
-    font-weight: 600;
-    margin-bottom: 2rem;
+.tutorial--html,
+.tutorial--css,
+.tutorial--js {
+    max-width: 55rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.start:hover {
-    // background: linear-gradient(90deg, hsl(243, 100%, 7%) 13%, hsl(273, 58%, 50%) 49%, hsl(0, 100%, 50%) 100%);
-    background: hsl(314, 64%, 34%);
+h2 {
+    border-top: .1rem solid hsl(0, 0%, 100%);
+    padding-top: .4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-h1 {
-    text-shadow: 1px 1px 4px hsl(314, 64%, 34%);
-=======
-    padding: 1.5rem 4.5rem 1.5rem 0;
->>>>>>> f52d1698b35bc143710d1f697a0b95a5d693d16e
+h3 {
+    padding-left: 1rem;
+    border-left: .5rem solid hsl(314, 64%, 34%);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+iframe {
+    max-width: 60rem;
+    margin-bottom: .5rem;
 }
