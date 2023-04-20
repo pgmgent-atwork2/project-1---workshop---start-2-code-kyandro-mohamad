@@ -1,76 +1,81 @@
 body {
-    background: linear-gradient(90deg, hsl(243, 100%, 7%) 13%, hsl(273, 58%, 50%) 49%, hsl(0, 100%, 50%) 100%);
-    padding: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    hsl(243, 100%, 7%) 13%,
+    hsl(273, 58%, 50%) 49%,
+    hsl(0, 100%, 50%) 100%
+  );
+  padding: 1.5rem;
 }
 
 .container {
-    max-width: 80rem;
-    margin: 0 auto;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 .navigation {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 72rem) {
-    .navigation--game {
-        transform: translateY(2rem);
-    }
+  .navigation--game {
+    transform: translateY(2rem);
+  }
 }
 
 .navigation-list {
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 2rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 2rem;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(243, 100%, 7%);
-    padding: .3rem .6rem;
-    transition: background 0.2s ease;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(243, 100%, 7%);
+  padding: 0.3rem 0.6rem;
+  transition: background 0.2s ease;
 }
 
 a:hover {
-    background: hsl(314, 64%, 34%);
+  background: hsl(314, 64%, 34%);
 }
 
 .content--game {
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 72rem) {
-    .content--game {
-        background-color: hsla(243, 100%, 7%, 0.5);
-        padding: 1.5rem;
-        margin-top: .5rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        transform: translateY(-2.5rem);
-    } 
+  .content--game {
+    background-color: hsla(243, 100%, 7%, 0.5);
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transform: translateY(-2.5rem);
+  }
 }
 
 @media (min-width: 80rem) {
-    .content--game {
-        padding-left: 0;
-    } 
+  .content--game {
+    padding-left: 0;
+  }
 }
 .intro {
-    padding-left: 1.5rem;
-}   
+  padding-left: 1.5rem;
+}
 @media (min-width: 72rem) {
-    .intro {
-        margin-top: 8rem;
-    }   
+  .intro {
+    margin-top: 8rem;
+  }
 }
 
 h1 {
@@ -81,70 +86,63 @@ h1 {
 }
 
 @media (min-width: 48rem) {
-    h1 {
-        font-size: 4.5rem;
-        line-height: 5rem;
-    }   
+  h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
 }
 
 p {
-    color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .intro-first-text {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 .intro-last-text {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .intro-last-text span {
-    font-weight: 700;
-    color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 5px hsl(0, 15%, 17%);
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 0 0 5px hsl(0, 15%, 17%);
 }
 
 @media (min-width: 48rem) {
-    .intro-last-text {
-        margin-top: 3rem;
-    }  
+  .intro-last-text {
+    margin-top: 3rem;
+  }
 }
 
 .memory-game {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
 @media (min-width: 80rem) {
-    .memory-game {
-        width: 50rem;
-    }
+  .memory-game {
+    width: 50rem;
+  }
 }
 
 .card {
-    width: 45%;
-    aspect-ratio: 1/1;
-    background-color: hsl(0, 0%, 83%);
-    flex-grow: 1;
-    overflow: hidden;
-    cursor: pointer;
+  width: 45%;
+  aspect-ratio: 1/1;
+  background-color: hsl(0, 0%, 83%);
+  flex-grow: 1;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-}
-
-@media (min-width: 48rem) {
-    .card {
-        width: 22%;
-        margin: .5rem;
-    } 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
 }
 
 .content--tutorial {
@@ -154,25 +152,11 @@ p {
 }
 
 
-/*
-
-
-mohamad
-
-*/
-
-
-.start {
-    background: transparent;
-    border: 1px solid white;
-    padding: .4rem 1rem;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    transition: background 0.2s ease;
-    font-weight: 600;
-    margin-bottom: 2rem;
+h2 {
+    border-top: .1rem solid hsl(0, 0%, 100%);
+    padding-top: .4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .start:hover {
@@ -180,7 +164,7 @@ mohamad
     background: hsl(314, 64%, 34%);
 }
 
-h1 {
-    text-shadow: 1px 1px 4px hsl(314, 64%, 34%);
-    padding: 1.5rem 4.5rem 1.5rem 0;
+iframe {
+    max-width: 60rem;
+    margin-bottom: .5rem;
 }
