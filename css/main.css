@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 77rem;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
@@ -20,6 +20,7 @@ body {
 }
 
 .navigation-list {
+    padding-left: 1rem;
     margin-bottom: 1rem;
     display: flex;
     gap: 2rem;
@@ -36,6 +37,11 @@ a {
     color: hsl(0, 0%, 100%);
     background-color: hsl(243, 100%, 7%);
     padding: .3rem .6rem;
+    transition: background 0.2s ease;
+}
+
+a:hover {
+    background: hsl(314, 64%, 34%);
 }
 
 .content--game {
@@ -58,7 +64,9 @@ a {
         padding-left: 0;
     } 
 }
-
+.intro {
+    padding-left: 1.5rem;
+}   
 @media (min-width: 72rem) {
     .intro {
         margin-top: 8rem;
@@ -92,6 +100,12 @@ p {
     margin-bottom: 2rem;
 }
 
+.intro-last-text span {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 0 5px hsl(0, 15%, 17%);
+}
+
 @media (min-width: 48rem) {
     .intro-last-text {
         margin-top: 3rem;
@@ -116,6 +130,7 @@ p {
     background-color: hsl(0, 0%, 83%);
     flex-grow: 1;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card-image {
@@ -136,4 +151,35 @@ p {
     background-color: hsla(243, 100%, 7%, 0.5);
     color: hsl(0, 0%, 100%);
     padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+
+/*
+
+
+mohamad
+
+*/
+
+
+.start {
+    background: transparent;
+    border: 1px solid white;
+    padding: .4rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.2s ease;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.start:hover {
+    // background: linear-gradient(90deg, hsl(243, 100%, 7%) 13%, hsl(273, 58%, 50%) 49%, hsl(0, 100%, 50%) 100%);
+    background: hsl(314, 64%, 34%);
+}
+
+h1 {
+    text-shadow: 1px 1px 4px hsl(314, 64%, 34%);
 }
