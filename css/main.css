@@ -115,6 +115,14 @@ p {
     aspect-ratio: 1/1;
     background-color: hsl(0, 0%, 83%);
     flex-grow: 1;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
 }
 
 @media (min-width: 48rem) {
