@@ -23,3 +23,7 @@ To run the game locally, simply download the code and open the index.html file i
 ## Feedback and Suggestions
 
 Thank you for playing Flip'n code! If you have any feedback or suggestions, please feel free to contact us.
+
+## Link to Figma
+
+https://www.figma.com/file/nwpZxcOHLKBFDwxCZ7wV42/Start-to-code?node-id=0%3A1&t=v0r9bLtxh1lILA2t-1
