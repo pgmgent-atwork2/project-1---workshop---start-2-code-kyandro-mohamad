@@ -1,28 +1,28 @@
 body {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 13%, rgba(134,53,200,1) 49%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, hsl(243, 100%, 7%) 13%, hsl(273, 58%, 50%) 49%, hsl(0, 100%, 50%) 100%);
     padding: 1.5rem;
 }
 
-.content {
-    padding-bottom: 3rem;
+.container {
+    max-width: 77rem;
+    margin: 0 auto;
+}
+
+.navigation {
+    position: relative;
+    z-index: 1;
 }
 
 @media (min-width: 72rem) {
-    .content {
-        max-width: 77rem;
-        margin: 0 auto;
-        background-color: rgba(2, 0, 36, 0.5);
-        padding: 1.5rem;
-        margin-top: .5rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    } 
+    .navigation--game {
+        transform: translateY(2rem);
+    }
 }
 
-@media (min-width: 80rem) {
-    .content {
-        padding-left: 0;
-    } 
+.navigation-list {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
 }
 
 ul {
@@ -30,7 +30,36 @@ ul {
     padding: 0;
 }
 
-@media (min-width: 48rem) {
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(243, 100%, 7%);
+    padding: .3rem .6rem;
+}
+
+.content--game {
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 72rem) {
+    .content--game {
+        background-color: hsla(243, 100%, 7%, 0.5);
+        padding: 1.5rem;
+        margin-top: .5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transform: translateY(-2.5rem);
+    } 
+}
+
+@media (min-width: 80rem) {
+    .content--game {
+        padding-left: 0;
+    } 
+}
+
+@media (min-width: 72rem) {
     .intro {
         margin-top: 8rem;
     }   
@@ -40,10 +69,10 @@ h1 {
     font-size: 3.3rem;
     line-height: 4rem;
     margin-bottom: 1rem;
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     h1 {
         font-size: 4.5rem;
         line-height: 5rem;
@@ -51,7 +80,7 @@ h1 {
 }
 
 p {
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 .intro-first-text {
@@ -78,14 +107,13 @@ p {
 @media (min-width: 80rem) {
     .memory-game {
         width: 50rem;
-        // margin: 0 auto;
     }
 }
 
 .card {
     width: 45%;
     aspect-ratio: 1/1;
-    background-color: lightgrey;
+    background-color: hsl(0, 0%, 83%);
     flex-grow: 1;
 }
 
@@ -94,4 +122,10 @@ p {
         width: 22%;
         margin: .5rem;
     } 
+}
+
+.content--tutorial {
+    background-color: hsla(243, 100%, 7%, 0.5);
+    color: hsl(0, 0%, 100%);
+    padding: 1.5rem 1.5rem 1.5rem 0;
 }
