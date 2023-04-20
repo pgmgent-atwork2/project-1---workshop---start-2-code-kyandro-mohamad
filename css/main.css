@@ -150,7 +150,6 @@ p {
 .content--tutorial {
     background-color: hsla(243, 100%, 7%, 0.5);
     color: hsl(0, 0%, 100%);
-<<<<<<< HEAD
     padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
@@ -183,7 +182,5 @@ mohamad
 
 h1 {
     text-shadow: 1px 1px 4px hsl(314, 64%, 34%);
-=======
     padding: 1.5rem 4.5rem 1.5rem 0;
->>>>>>> f52d1698b35bc143710d1f697a0b95a5d693d16e
 }

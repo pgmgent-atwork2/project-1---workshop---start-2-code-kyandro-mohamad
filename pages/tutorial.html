@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
     <header class="header-content">
         <nav class="container navigation">
@@ -53,11 +55,15 @@
                 <script async src="//jsfiddle.net/Kyandro/apw2nLom/4/embed/html/dark/"></script>
 
                 <p>
-                    Als start heb je de basis van een HTML-document. Dit kan je bekomen door simpelweg een “!” te typen gevolgd door een “TAB”. Hier zal je enkele zaken zien verschijnen binnen een bepaalde HEAD-tag, hierbinnen zal je code vinden die nodig zijn voor de machine om je documenten te lezen. Onder deze tag vind je de BODY-tag, hier zal je al je inhoud in gaan plaatsen.
+                    Als start heb je de basis van een HTML-document. Dit kan je bekomen door simpelweg een “!” te typen
+                    gevolgd door een “TAB”. Hier zal je enkele zaken zien verschijnen binnen een bepaalde HEAD-tag,
+                    hierbinnen zal je code vinden die nodig zijn voor de machine om je documenten te lezen. Onder deze
+                    tag vind je de BODY-tag, hier zal je al je inhoud in gaan plaatsen.
                 </p>
 
                 <p>
-                    Binnen in je HEAD-tag link je naar je CSS-bestanden zodat je de HTML-pagina’s die je gemaakt hebt kunt gaan vormgeven.
+                    Binnen in je HEAD-tag link je naar je CSS-bestanden zodat je de HTML-pagina’s die je gemaakt hebt
+                    kunt gaan vormgeven.
                 </p>
 
                 <h3>
@@ -67,17 +73,26 @@
                 <script async src="//jsfiddle.net/Kyandro/apw2nLom/6/embed/html/dark/"></script>
 
                 <p>
-                    De body hier is opgebouwd uit twee grote delen, namelijk de HEADER en de MAIN. De HEADER staat voor alles bovenaan de pagina, er kunnen hier zaken in zitten zoals de navigatie of een grote banner/foto. In de MAIN zit je belangrijkste content waarover je pagina gaat, zoals hier de memory game.
+                    De body hier is opgebouwd uit twee grote delen, namelijk de HEADER en de MAIN. De HEADER staat voor
+                    alles bovenaan de pagina, er kunnen hier zaken in zitten zoals de navigatie of een grote
+                    banner/foto. In de MAIN zit je belangrijkste content waarover je pagina gaat, zoals hier de memory
+                    game.
                 </p>
 
                 <p>
-                    Zoals je hier kunt zien gebruiken we binnen de HEADER een navigatie (om naar andere pagina’s te kunnen gaan) met een unordered list met daarbinnen 2 items. De A-tags hierbinnen zijn links waarbij je binnen het href=”” attribuut moet zeggen naar waar je zal linken.
+                    Zoals je hier kunt zien gebruiken we binnen de HEADER een navigatie (om naar andere pagina’s te
+                    kunnen gaan) met een unordered list met daarbinnen 2 items. De A-tags hierbinnen zijn links waarbij
+                    je binnen het href=”” attribuut moet zeggen naar waar je zal linken.
                 </p>
 
                 <script async src="//jsfiddle.net/Kyandro/apw2nLom/8/embed/html/dark/"></script>
 
                 <p>
-                    Binnen de MAIN is het heel repititief, we maken eerst een DIV-blok met een titel H1 en enkele paragraaf-tags. Hierna hebben we een ARTICLE, dit is een stukje op de pagina dat volledig op zichzelf kan staan. Hierbinnen zitten er verschillende DIV-blokken die de kaartjes zullen worden met hun afbeelding in. Aan elke DIV is er zoals je ziet ook een data-card=”” gelinkt, dit is zodat we in Javascript zullen kunnen kijken welke kaarten er gelijk zijn aan elkaar.
+                    Binnen de MAIN is het heel repititief, we maken eerst een DIV-blok met een titel H1 en enkele
+                    paragraaf-tags. Hierna hebben we een ARTICLE, dit is een stukje op de pagina dat volledig op
+                    zichzelf kan staan. Hierbinnen zitten er verschillende DIV-blokken die de kaartjes zullen worden met
+                    hun afbeelding in. Aan elke DIV is er zoals je ziet ook een data-card=”” gelinkt, dit is zodat we in
+                    Javascript zullen kunnen kijken welke kaarten er gelijk zijn aan elkaar.
                 </p>
 
                 <h3>
@@ -97,7 +112,8 @@
                 </h2>
 
                 <p>
-                    Zoals je gezien hebt in de HTML geven we heel veel zaken een class=””, dit doen we zodat dat element kunnen gaan vormgeven.
+                    Zoals je gezien hebt in de HTML geven we heel veel zaken een class=””, dit doen we zodat dat element
+                    kunnen gaan vormgeven.
                 </p>
 
                 <h3>
@@ -115,7 +131,7 @@
                 </h3>
 
                 <script async src="//jsfiddle.net/Kyandro/apw2nLom/13/embed/css/dark/"></script>
-                
+
                 <p>
                     Gebruik een container om je content tussen een bepaalde breedte en in het midden te houden.
                 </p>
@@ -123,7 +139,7 @@
                 <h3>Other code ...</h3>
 
                 <script async src="//jsfiddle.net/Kyandro/apw2nLom/16/embed/css/dark/"></script>
-                
+
                 <p>
                     Gebruik de @media query om je content te laten reageren vanaf een bepaalde breedte van het scherm.
                 </p>
@@ -133,14 +149,120 @@
                 <h2>
                     Javascript:
                 </h2>
-
+                <h3>
+                    Het verkrijgen van DOM-elementen
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/5/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                 <p>
-                    Content
+                    De DOM (Document Object Model) in JavaScript wordt het Document Object Model genoemd en hiermee
+                    spreek je de html elementen aan.
                 </p>
+
+                <h3>
+                    Variabelen declareren en initialiseren
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/4/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Dit codeblok verkrijgt de DOM-elementen van alle kaarten in het spel, alle afbeeldingen van de
+                    kaarten en het startknop-element door middel van hun CSS-klassenamen.
+                </p>
+                <h3>
+                    Eventlistener voor het omdraaien van kaarten
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/7/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Dit codeblok zorgt ervoor dat de kaarten kunnen worden omgedraaid door middel van een eventlistener.
+                </p>
+
+                <h3>
+                    Functie om te controleren op een overeenkomst
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/9/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Deze functie controleert of de twee kaarten die zijn omgedraaid overeenkomen. Als ze overeenkomen
+                    worden ze niet meer omgedraaid en blijven ze zichtbaar. Als ze niet overeenkomen worden ze weer
+                    teruggekeerd naar de achterkant. <br>
+
+                    <span>Een functie in JavaScript is een blok code dat
+                        een specifieke taak of verzameling van taken uitvoert. Functies zijn een fundamenteel onderdeel
+                        van
+                        JavaScript-programmering en worden gebruikt om code te organiseren in herbruikbare
+                        modules.</span>
+                </p>
+                <h3>
+                    Functie om te zorgen dat je niet meer op de kaarten kan klikken
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/11/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Deze functie zorgt ervoor dat je niet meer op de kaarten kan klikken wannneer ze hetzelfde zijn.
+                </p>
+                <h3>
+                    Functie om kaarten om te draaien
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/13/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Deze functie zorgt ervoor dat de kaarten omgedraaid worden.
+                </p>
+                <h3>
+                    Functie om het bord te resetten
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/15/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Deze functie zorgt ervoor dat het bord wordt gereset.
+                </p>
+                <h3>
+                    Functie om de kaarten te schudden
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/19/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Deze functie zorgt ervoor dat de kaarten worden geschud.
+                    <br>
+                    <span>
+                        forEach() is een functie van hogere orde die wordt gebruikt om een array te herhalen en een
+                        functie uit te voeren op elk element van de array. Het is een ingebouwde methode van het
+                        Array-object en wordt gebruikt om code te vereenvoudigen die een bewerking moet uitvoeren op elk
+                        element van een array.
+                    </span>
+                </p>
+                <h3>
+                    Eventlisteners toevoegen aan de kaarten
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/20/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Deze functie zorgt ervoor dat de eventlisteners worden toegevoegd aan de kaarten.
+                </p>
+                <h3>
+                    Functie shuffle wordt aangeroepen
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/24/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Deze functie zorgt ervoor dat de functie shuffle wordt aangeroepen.
+                </p>
+                <h3>
+                    Eventlistener toevoegen aan de startknop
+                </h3>
+                <iframe width="100%" height="300" src="//jsfiddle.net/mohamadmatar7/suvzn5qd/22/embedded/js/dark/"
+                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                <p>
+                    Deze functie zorgt ervoor dat de eventlistener wordt toegevoegd aan de startknop.
+                </p>
+
+
             </section>
         </article>
     </main>
-    
+
     <script src="./js/main.js"></script>
 </body>
+
 </html>
